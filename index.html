@@ -1,23 +1,54 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>index.html</title>
 <meta charset='utf-8'>
 <style>
+    *{margin: 0px; padding: 0px;}
+    #page{width: 1350px; height: 1150px; margin: 0 auto; border: solid 0px rgb(12, 196, 178);}
 table, tr, th, td {
 	border: solid 2px black;
 	border-collapse: collapse;
-	padding: 8px; margin: 15px;}
-    h3{border: solid 3px rgb(225, 87, 28); width: 190px; border-radius: 10px; padding: 5px 0 5px 8px; margin: 15px;} 
+	padding: 8px; margin: 10px;}
+    #logo{border: solid 3px rgb(118, 7, 77); width: 240px; border-radius: 10px;  font-size: 20px; text-align: center; margin-left: 500px; padding: 8px; margin-top: 10px; background-color:  rgb(209, 78, 211);} 
     .to{color: rgb(255, 38, 0);}  .to1{color: rgb(255, 56, 21);} .to2{color: rgb(254, 69, 36);} .to3{color: rgb(255, 82, 52);} .to4{color: rgb(246, 104, 79);} .to5{color: rgb(252, 133, 112);}
     body{background-image: url('img/pt.jpg');}
-    td{width: 200px; height: 20px; text-align: center; padding: 10px;}
+    td{width: 290px; height: 30px; text-align: center; padding: 10px;}
 .wp{background-color: hsl(288, 72%, 45%);}
+header{margin-top: 10px; height: 70px;   background-color:rgb(201, 159, 243); padding: 8px;}
+section{margin-top: 10px; width: 995px;height: 600px; float: left; margin-right: 15px; border: solid 0px rgb(0, 0, 0);}
+nav{margin-top: 10px; width: 830px; height: 50px; margin-top: 20px; padding: 8px; border: solid 0px blue;}
+aside{margin-top: 10px;width: 280px; height: 630px; float: right; border: solid 0px red; }
+footer{margin-top: 10px; width: 995px; height: 300px;}
+.cl{clear: both;}
+li{list-style-type: none; float: left;}
+#top{float: right; margin-top: 50px; margin-right: 20px;}
+#ad{float: left; margin-top: 0px; margin-left: 0px; width: 50px; height: 50px;}
+#cu{float: left; margin-top: 20px;  margin-left: 200px;   }
+
+a:visited{text-decoration: none; color: rgb(196, 49, 49);}
+a:link{text-decoration: none; color: rgb(0, 0, 0);}
 </style>
 </head>
 <body>
-    
-<h3>2022년 1학기 시간표</h3> 
+<div id="page">
+<header>
+<div id="logo">2022년 1학기 시간표</div> 
+
+</header>
+<nav>
+    <ul>
+    <li><a href="회원가입.html">회원가입 ㅣ</a></li>
+    <li><a href="루바토 펜션.html" target="_blank">루바토 펜션 안내 ㅣ</a></li>
+    <li><a href="festival.html" target="_blank">호서국제 페스티벌 ㅣ</a></li>
+    <li><a href="night.html" target="_blank">야간개장 안내 ㅣ</a></li>
+    <li><a href="sale.html" target="_blank">세일안내장 ㅣ</a></li>
+    <li><a href="schedule.html" target="_blank">5월 일정표 ㅣ</a></li>
+    <li><a href="list.html" target="_blank">판매목록</a></li>
+    </ul>
+    </nav>
+<section>
 <table>
 <tr>
     <th></th> <th class="to">월</th> <th class="to1">화</th ><th class="to2">수</th> <th class="to3">목</th> <th class="to4">금</th><th class="to5">토</th> </tr>
@@ -39,12 +70,23 @@ table, tr, th, td {
 <tr>
     <td>17:30</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
 </table>
-<a href="회원가입.html">회원가입</a>
-<a href="루바토 펜션.html" target="_blank">루바토 펜션 안내</a><br>
-<a href="festival.html" target="_blank">호서국제 페스티벌</a>
-<a href="night.html" target="_blank">야간개장 안내</a><br>
-<a href="sale.html" target="_blank">세일안내장</a><br>
-<a href="schedule.html" target="_blank">5월 일정표</a>
-<a href="list.html" target="_blank">판매목록</a>
+</section>
+
+<aside>
+    <ul>
+    <li><div class="cl"><img src="img/ggom1.jpg" width="280px" height="200px"></div></li>
+    <li><div class="cl"><img src="img/ggom2.jpg" width="280px"height="180px"></div></li>
+    <li><div class="cl"><img src="img/ggom3.jpg" width="280px" height="180px"></div></li>
+</ul>
+</aside>
+<div class="cl"></div>
+<footer>
+    <div id="ad"><img src="img/hoseo.png" ></div>
+    <div id="cu">아산캠퍼스(31499) 충청남도 아산시 배방읍 호서로 79번길 20041.540.5114<br>
+        천안캠퍼스(31066) 충청남도 천안시 동남구 호서대길 12041.560.8114<br>
+        산학융합캠퍼스(31702) 충청남도 당진시 석문면 산단7로 201041.360.4811~2<br>
+        서울캠퍼스(06724) 서울특별시 서초구 남부순환로 249702-2059-2312<br></div>
+</footer>
+</div>
 </body>
 </html>
